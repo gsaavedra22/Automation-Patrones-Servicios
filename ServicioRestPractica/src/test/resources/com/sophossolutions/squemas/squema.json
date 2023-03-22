@@ -1,0 +1,353 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "count",
+        "next",
+        "previous",
+        "results"
+    ],
+    "properties": {
+        "count": {
+            "type": "integer",
+            "default": 0,
+            "title": "The count Schema",
+            "examples": [
+                25
+            ]
+        },
+        "next": {
+            "type": "string",
+            "default": "",
+            "title": "The next Schema",
+            "examples": [
+                "https://pokeapi.co/api/v2/nature/?offset=20\u0026limit=5"
+            ]
+        },
+        "previous": {
+            "type": "null",
+            "default": null,
+            "title": "The previous Schema",
+            "examples": [
+                null
+            ]
+        },
+        "results": {
+            "type": "array",
+            "default": [],
+            "title": "The results Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "name",
+                    "url"
+                ],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "The name Schema",
+                        "examples": [
+                            "hardy",
+                            "bold",
+                            "modest",
+                            "calm",
+                            "timid",
+                            "lonely",
+                            "docile",
+                            "mild",
+                            "gentle",
+                            "hasty",
+                            "adamant",
+                            "impish",
+                            "bashful",
+                            "careful",
+                            "rash",
+                            "jolly",
+                            "naughty",
+                            "lax",
+                            "quirky",
+                            "naive"
+                        ]
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "The url Schema",
+                        "examples": [
+                            "https://pokeapi.co/api/v2/nature/1/",
+                            "https://pokeapi.co/api/v2/nature/2/",
+                            "https://pokeapi.co/api/v2/nature/3/",
+                            "https://pokeapi.co/api/v2/nature/4/",
+                            "https://pokeapi.co/api/v2/nature/5/",
+                            "https://pokeapi.co/api/v2/nature/6/",
+                            "https://pokeapi.co/api/v2/nature/7/",
+                            "https://pokeapi.co/api/v2/nature/8/",
+                            "https://pokeapi.co/api/v2/nature/9/",
+                            "https://pokeapi.co/api/v2/nature/10/",
+                            "https://pokeapi.co/api/v2/nature/11/",
+                            "https://pokeapi.co/api/v2/nature/12/",
+                            "https://pokeapi.co/api/v2/nature/13/",
+                            "https://pokeapi.co/api/v2/nature/14/",
+                            "https://pokeapi.co/api/v2/nature/15/",
+                            "https://pokeapi.co/api/v2/nature/16/",
+                            "https://pokeapi.co/api/v2/nature/17/",
+                            "https://pokeapi.co/api/v2/nature/18/",
+                            "https://pokeapi.co/api/v2/nature/19/",
+                            "https://pokeapi.co/api/v2/nature/20/"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "name": "hardy",
+                    "url": "https://pokeapi.co/api/v2/nature/1/"
+                },
+                {
+                    "name": "bold",
+                    "url": "https://pokeapi.co/api/v2/nature/2/"
+                },
+                {
+                    "name": "modest",
+                    "url": "https://pokeapi.co/api/v2/nature/3/"
+                },
+                {
+                    "name": "calm",
+                    "url": "https://pokeapi.co/api/v2/nature/4/"
+                },
+                {
+                    "name": "timid",
+                    "url": "https://pokeapi.co/api/v2/nature/5/"
+                },
+                {
+                    "name": "lonely",
+                    "url": "https://pokeapi.co/api/v2/nature/6/"
+                },
+                {
+                    "name": "docile",
+                    "url": "https://pokeapi.co/api/v2/nature/7/"
+                },
+                {
+                    "name": "mild",
+                    "url": "https://pokeapi.co/api/v2/nature/8/"
+                },
+                {
+                    "name": "gentle",
+                    "url": "https://pokeapi.co/api/v2/nature/9/"
+                },
+                {
+                    "name": "hasty",
+                    "url": "https://pokeapi.co/api/v2/nature/10/"
+                },
+                {
+                    "name": "adamant",
+                    "url": "https://pokeapi.co/api/v2/nature/11/"
+                },
+                {
+                    "name": "impish",
+                    "url": "https://pokeapi.co/api/v2/nature/12/"
+                },
+                {
+                    "name": "bashful",
+                    "url": "https://pokeapi.co/api/v2/nature/13/"
+                },
+                {
+                    "name": "careful",
+                    "url": "https://pokeapi.co/api/v2/nature/14/"
+                },
+                {
+                    "name": "rash",
+                    "url": "https://pokeapi.co/api/v2/nature/15/"
+                },
+                {
+                    "name": "jolly",
+                    "url": "https://pokeapi.co/api/v2/nature/16/"
+                },
+                {
+                    "name": "naughty",
+                    "url": "https://pokeapi.co/api/v2/nature/17/"
+                },
+                {
+                    "name": "lax",
+                    "url": "https://pokeapi.co/api/v2/nature/18/"
+                },
+                {
+                    "name": "quirky",
+                    "url": "https://pokeapi.co/api/v2/nature/19/"
+                },
+                {
+                    "name": "naive",
+                    "url": "https://pokeapi.co/api/v2/nature/20/"
+                }]
+            },
+            "examples": [
+                [{
+                    "name": "hardy",
+                    "url": "https://pokeapi.co/api/v2/nature/1/"
+                },
+                {
+                    "name": "bold",
+                    "url": "https://pokeapi.co/api/v2/nature/2/"
+                },
+                {
+                    "name": "modest",
+                    "url": "https://pokeapi.co/api/v2/nature/3/"
+                },
+                {
+                    "name": "calm",
+                    "url": "https://pokeapi.co/api/v2/nature/4/"
+                },
+                {
+                    "name": "timid",
+                    "url": "https://pokeapi.co/api/v2/nature/5/"
+                },
+                {
+                    "name": "lonely",
+                    "url": "https://pokeapi.co/api/v2/nature/6/"
+                },
+                {
+                    "name": "docile",
+                    "url": "https://pokeapi.co/api/v2/nature/7/"
+                },
+                {
+                    "name": "mild",
+                    "url": "https://pokeapi.co/api/v2/nature/8/"
+                },
+                {
+                    "name": "gentle",
+                    "url": "https://pokeapi.co/api/v2/nature/9/"
+                },
+                {
+                    "name": "hasty",
+                    "url": "https://pokeapi.co/api/v2/nature/10/"
+                },
+                {
+                    "name": "adamant",
+                    "url": "https://pokeapi.co/api/v2/nature/11/"
+                },
+                {
+                    "name": "impish",
+                    "url": "https://pokeapi.co/api/v2/nature/12/"
+                },
+                {
+                    "name": "bashful",
+                    "url": "https://pokeapi.co/api/v2/nature/13/"
+                },
+                {
+                    "name": "careful",
+                    "url": "https://pokeapi.co/api/v2/nature/14/"
+                },
+                {
+                    "name": "rash",
+                    "url": "https://pokeapi.co/api/v2/nature/15/"
+                },
+                {
+                    "name": "jolly",
+                    "url": "https://pokeapi.co/api/v2/nature/16/"
+                },
+                {
+                    "name": "naughty",
+                    "url": "https://pokeapi.co/api/v2/nature/17/"
+                },
+                {
+                    "name": "lax",
+                    "url": "https://pokeapi.co/api/v2/nature/18/"
+                },
+                {
+                    "name": "quirky",
+                    "url": "https://pokeapi.co/api/v2/nature/19/"
+                },
+                {
+                    "name": "naive",
+                    "url": "https://pokeapi.co/api/v2/nature/20/"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "count": 25,
+        "next": "https://pokeapi.co/api/v2/nature/?offset=20\u0026limit=5",
+        "previous": null,
+        "results": [{
+            "name": "hardy",
+            "url": "https://pokeapi.co/api/v2/nature/1/"
+        },
+        {
+            "name": "bold",
+            "url": "https://pokeapi.co/api/v2/nature/2/"
+        },
+        {
+            "name": "modest",
+            "url": "https://pokeapi.co/api/v2/nature/3/"
+        },
+        {
+            "name": "calm",
+            "url": "https://pokeapi.co/api/v2/nature/4/"
+        },
+        {
+            "name": "timid",
+            "url": "https://pokeapi.co/api/v2/nature/5/"
+        },
+        {
+            "name": "lonely",
+            "url": "https://pokeapi.co/api/v2/nature/6/"
+        },
+        {
+            "name": "docile",
+            "url": "https://pokeapi.co/api/v2/nature/7/"
+        },
+        {
+            "name": "mild",
+            "url": "https://pokeapi.co/api/v2/nature/8/"
+        },
+        {
+            "name": "gentle",
+            "url": "https://pokeapi.co/api/v2/nature/9/"
+        },
+        {
+            "name": "hasty",
+            "url": "https://pokeapi.co/api/v2/nature/10/"
+        },
+        {
+            "name": "adamant",
+            "url": "https://pokeapi.co/api/v2/nature/11/"
+        },
+        {
+            "name": "impish",
+            "url": "https://pokeapi.co/api/v2/nature/12/"
+        },
+        {
+            "name": "bashful",
+            "url": "https://pokeapi.co/api/v2/nature/13/"
+        },
+        {
+            "name": "careful",
+            "url": "https://pokeapi.co/api/v2/nature/14/"
+        },
+        {
+            "name": "rash",
+            "url": "https://pokeapi.co/api/v2/nature/15/"
+        },
+        {
+            "name": "jolly",
+            "url": "https://pokeapi.co/api/v2/nature/16/"
+        },
+        {
+            "name": "naughty",
+            "url": "https://pokeapi.co/api/v2/nature/17/"
+        },
+        {
+            "name": "lax",
+            "url": "https://pokeapi.co/api/v2/nature/18/"
+        },
+        {
+            "name": "quirky",
+            "url": "https://pokeapi.co/api/v2/nature/19/"
+        },
+        {
+            "name": "naive",
+            "url": "https://pokeapi.co/api/v2/nature/20/"
+        }]
+    }]
+}

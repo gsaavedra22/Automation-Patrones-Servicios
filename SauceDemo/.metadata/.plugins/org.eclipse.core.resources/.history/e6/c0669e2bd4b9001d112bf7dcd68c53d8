@@ -1,0 +1,53 @@
+package com.sophossolutions.stepdefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import com.sophossolutions.page.SwagLabsCart;
+import com.sophossolutions.page.SwagLabsCheckout;
+import com.sophossolutions.page.SwagLabsCheckoutComplete;
+import com.sophossolutions.page.SwagLabsLogin;
+import com.sophossolutions.utils.Constants;
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import net.thucydides.core.annotations.Managed;
+
+public class SwagLabsCheckoutStepDefinition {
+	SwagLabsLogin swagLabsLogin;
+
+	SwagLabsCart swaglabscart;
+
+
+	SwagLabsCheckoutComplete swagLabsCheckoutComplete; 
+
+	SwagLabsCheckout swaglabscheckout;
+
+	@Managed
+	WebDriver myBrowser;
+
+	@Given("The user must be in the page your cart")
+	public void theUserMustBeInThePageYourCart() {
+
+		swaglabscart.clickCart();
+
+		swaglabscheckout.clickCheckout();
+	}
+
+	@When("Enter information for  the product in  the cart")
+	public void enterInformationForTheProductInTheCart(io.cucumber.datatable.DataTable dataTable) {
+		swaglabscheckout.formCheckout(dataTable);
+	}
+
+	@Then("validate the results of the purchases with the text. {string}")
+	public void validateTheResultsOfThePurchasesWithTheText(String text) {
+		swaglabscheckout.getTextTotal();
+
+		swaglabscheckout.clickFinish();
+
+		swagLabsCheckoutComplete.validateText(Constants.getData(text));
+
+		System.out.println("Estoy en el then");
+	}
+}
